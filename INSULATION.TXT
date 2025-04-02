@@ -1,0 +1,50 @@
+Here's how to run the ML optimizer script in Termux:
+
+1. First, install Termux from the Google Play Store or F-Droid if you haven't already.
+
+2. Open Termux and update the packages:
+```
+pkg update && pkg upgrade
+```
+
+3. Install the required packages:
+```
+pkg install bash
+```
+
+4. Create the script file using a text editor:
+```
+nano ml_optimizer-v4.sh
+```
+
+5. Copy and paste the entire script into the text editor.
+
+6. Save the file by pressing Ctrl+O, then Enter, and exit with Ctrl+X.
+
+7. Make the script executable:
+```
+chmod +x ml_optimizer-v4.sh
+```
+
+8. Run the script:
+```
+./ml_optimizer-v4.sh
+```
+
+If you need root access for the advanced optimizations (which is recommended), you'll need to:
+
+1. Install a root manager app like Magisk (if your device is rooted)
+2. Install the Termux:API add-on from the same source as Termux
+3. Install the necessary package in Termux:
+```
+pkg install tsu
+```
+
+4. Then run the script with root privileges:
+```
+tsu -c ./ml_optimizer-v4.sh
+```
+
+If you encounter any "Permission denied" errors when running without root, that's normal - the script is designed to skip those operations and only apply the non-root optimizations.
+
+For best results, make sure Mobile Legends is closed before running the optimizer, then open it after the optimization completes.
